@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200;500;600&family=Exo+2:wght@600&family=Press+Start+2P&family=Rubik&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting_game</title>
+
+    
+</head>
+<body>
+    <div style="position:relative; display: inline-block;">
+        <div style="
+            position: absolute; 
+            display: flex; 
+            border: 1px white;
+            padding:20px;
+            width:100%;
+            align-items: center;
+            ">
+            <!-- hero health -->
+            <div style="
+            width: 100%; 
+            position:relative; 
+            display:flex; 
+            justify-content: 
+            flex-end;
+            border-top:4px solid white;
+            border-left:4px solid white;
+            border-bottom:4px solid white;">
+                <div style="
+                background-color: red; 
+                height: 30px; 
+                width: 100%;
+                ">
+                    <div id="heroHealth" style="
+                        position:absolute; 
+                        background-color: #60a5fa; 
+                        top:0;
+                        right:0;
+                        bottom:0;
+                        width:100%;"></div>
+                </div>
+            </div>
+            <!-- timer -->
+            <div id="timer" style="
+            height: 50px; 
+            width: 100px; 
+            background-color: black; 
+            flex-shrink: 0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color:white;
+            border:4px solid white;
+            "></div>
+            <!-- enemy health -->
+            <div style="
+            width: 100%; 
+            position:relative;
+            border-top:4px solid white;
+            border-right:4px solid white;
+            border-bottom:4px solid white;">
+                <div style="background-color: red; height: 30px; width: 100%;">
+                    <div id="enemyHealth" style="
+                        position:absolute; 
+                        background-color: #60a5fa; 
+                        top:0;
+                        right:0;
+                        bottom:0;
+                        left:0;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="winner" style="
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        font-size:30px;
+        color: white;
+        "></div>
+        <canvas></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
